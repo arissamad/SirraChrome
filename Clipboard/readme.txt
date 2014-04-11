@@ -1,0 +1,1 @@
+Clipboard - A chrome extension that allows you to define your own clipboard. Quickly copy-and-paste common text.

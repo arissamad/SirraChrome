@@ -1,0 +1,14 @@
+{
+	"name": "Sirra Clipboard",
+	"short_name": "Sirra Clipboard",
+	"version": "1.1",
+	"manifest_version": 2,
+	"description": "Easily define text that you use often. Copy and paste anytime from the extension.",
+	"icons": {"48": "clipboard_48.png", "128": "clipboard_128.png"},
+	"browser_action": {
+		"default_icon": "clipboard.png",
+		"default_popup": "popup.html"
+	},
+	"content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+	"optional_permissions": [ "clipboardWrite"]	
+}

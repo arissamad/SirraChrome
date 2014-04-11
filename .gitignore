@@ -1,0 +1,7 @@
+Clipboard.zip
+.classpath
+.project
+.settings
+target/
+*.swp
+*.log
