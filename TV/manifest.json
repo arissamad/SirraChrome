@@ -1,0 +1,41 @@
+{
+	"name": "Sirra TV",
+	"short_name": "Sirra TV",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Easily watch TV.",
+	"icons": {"48": "tv_48.png", "128": "tv_128.png"},
+	"browser_action": {
+		"default_icon": "tv_512.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts" : [
+		{
+			"matches": [
+				"http://watchseries.ag/episode/*"],
+			"js": ["jquery-1.7.2.min.js", "ws_sitelist.js"]
+		},
+		{
+			"matches": [
+				"http://watchseries.ag/open/*"],
+			"js": ["jquery-1.7.2.min.js", "ws_open.js"]
+		},
+		{
+			"matches": [
+				"http://vidzi.tv/*"],
+			"js": ["jquery-1.7.2.min.js", "vidzi.js"]
+		},
+		{
+			"matches": [
+				"http://www.videoweed.es/*"],
+			"js": ["jquery-1.7.2.min.js", "videoweed.js"]
+		},
+		{
+			"matches": [
+				"http://www.filmon.com/*"],
+			"js": ["jquery-1.7.2.min.js", "filmon.js"]
+		}
+	],
+	"content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+	"optional_permissions": [ "clipboardWrite"]	
+}

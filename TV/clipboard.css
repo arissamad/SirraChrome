@@ -1,0 +1,84 @@
+body {
+	min-width:750px;
+	padding: 0px 20px;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #ff0000;
+	display: block;
+}
+
+h1 small {
+	padding-left: 20px;
+}
+
+.sp {
+	margin-top: 10px;
+}
+
+.float-right {
+	float: right;
+}
+
+.login-section {
+	max-width: 330px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.clip-table {
+	cursor: pointer;
+}
+
+.clip-table tr:hover td.name-td, .clip-table tr:hover td.clip-td {
+	background: #3E87C6 !important;
+	color: white;
+}
+
+.clip-table .col-edit {
+	width: 10px;
+	overflow: hidden;
+}
+
+.clip-table .name-td {
+	width: 100px;
+	max-width: 100px;
+	white-space: normal !important;
+}
+
+.clip-table .clip-td {
+	overflow: hidden;
+	width: 300px;
+	max-width: 300px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.clip-table .edit-td {
+	white-space: normal !important;
+	color: 
+}
+
+.clip-table .edit-td span:hover {
+	color: red;
+}
+
+.clip-table .edit-td .glyphicon {
+	padding: 0px 5px;
+}
+
+.copy-confirmation, {
+	margin-bottom: 50px;
+}
+
+.copy-confirmation, .view-clip {
+	margin-bottom: 20px;
+}
+
+.copy-confirmation .copy-text, .view-clip .copy-text {
+	margin-top: 10px;
+	white-space: pre-wrap;
+}

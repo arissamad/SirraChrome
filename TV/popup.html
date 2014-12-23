@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="clipboard.css">
+	<title>Sirra TV</title>
+	
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	 <!-- JavaScript and HTML must be in separate files for security. -->
+	 <script src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
+	 <script src="jquery-1.7.2.min.js"></script>
+	 <script src="popup.js"></script>
+</head>
+<body>
+  	<script src="bootstrap/js/bootstrap.min.js"></script>
+  	
+  	<button type="button" class="btn-login float-right btn btn-xs btn-info">Login</button>
+    <h1>Sirra TV<small class="text-right">version: 1.0</small></h1>
+
+	<div class="login-section">
+		
+			<input name="email" type="email" class="username-input form-control" placeholder="Simple Username">
+			<button class="sp btn-signin btn btn-primary" type="submit">Sign in</button>
+		
+	</div>
+
+	<div class="application">
+	    <div class="row">
+	    	<div class="col-xs-4">
+	    		<button type="button" class="add-text btn btn-primary">Add Show</button>
+	    	</div>
+	    	<div class="col-xs-8">
+	    		<input class="search-input form-control" name="search" placeholder="Search..." required="">
+	    	</div>
+	    </div>
+	    
+	    <div class="sp add-dialog">
+		    <span>TV Show Name</span>
+		    <input name="name" class="name-input form-control">
+		    <br/>
+		    <span>URL</span>
+		    <textarea class="clip-input form-control"></textarea>
+		    <button type="button" class="save sp btn btn-success">Save</button>
+		    <button type="button" class="cancel sp btn btn-default">Cancel</button>
+		    <button type="button" class="float-right delete sp btn btn-danger">Delete</button>
+	    </div>
+	    
+	    <div class="message sp alert alert-success">
+	    	<strong>Great!</strong> We've saved the URL.
+	    </div>
+	    
+	    <br/>
+		<div class="table-responsive search-table">
+			
+			<table class="clip-table table table-striped">
+				<thead>
+					<tr>
+						<th class="col-name">TV Show</th>
+						<th class="col-clip">URL</th>
+						<th class="col-edit"></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div> <!-- application -->
+	
+	<div class="copy-confirmation">
+		<div class="alert alert-success"><strong>Going to TV Show:</strong><hr /><div class="copy-text">ssdf</div></div>
+	</div>
+	
+	<div class="view-clip">
+		<div class="alert alert-success"><strong>Clip:</strong><hr /><div class="copy-text">ssdf</div></div>
+		<button type="button" class="done-clip-btn btn btn-info">Done</button>		
+	</div>
+</body>
+</html>
