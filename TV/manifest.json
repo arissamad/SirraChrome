@@ -1,7 +1,7 @@
 {
 	"name": "Sirra TV",
 	"short_name": "Sirra TV",
-	"version": "1.0",
+	"version": "1.1",
 	"manifest_version": 2,
 	"description": "Easily watch TV.",
 	"icons": {"48": "tv_48.png", "128": "tv_128.png"},
@@ -34,6 +34,10 @@
 			"matches": [
 				"http://www.filmon.com/*"],
 			"js": ["jquery-1.7.2.min.js", "filmon.js"]
+		},
+		{
+			"matches": ["http://kickass.so/*"],
+			"js": ["jquery-1.7.2.min.js", "kat.js"]
 		}
 	],
 	"content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
