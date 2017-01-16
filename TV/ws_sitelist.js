@@ -5,6 +5,8 @@ function init_qspipeline() {
 
 	highlight("vidzi.tv", "yellow");
 	highlight("videoweed", "chartreuse");
+	highlight("vid.ag", "pink");
+	highlight("vidto.me", "PaleTurquoise");
 }
 
 function highlight(text, color) {

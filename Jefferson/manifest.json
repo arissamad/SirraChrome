@@ -1,0 +1,25 @@
+{
+	"name": "Jefferson Compilation Creator",
+	"short_name": "Jefferson",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Easily create compilation videos.",
+	"icons": {"48": "butler_48.png", "128": "butler_128.png"},
+	"browser_action": {
+		"default_icon": "butler_512.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts" : [
+		{
+			"matches": ["https://www.instagram.com/*", 
+						"https://www.youtube.com/*"],
+			"js": ["jquery-1.7.2.min.js", "lodash.min.js", "InstagramPlugin.js"]
+		},
+		{
+			"matches": ["http://www.cc.com/*"],
+			"js": ["jquery-1.7.2.min.js", "cc.js"]
+		}
+	],
+	"content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+	"optional_permissions": [ "clipboardWrite"]	
+}

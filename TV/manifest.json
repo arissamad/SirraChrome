@@ -1,7 +1,7 @@
 {
 	"name": "Sirra TV",
 	"short_name": "Sirra TV",
-	"version": "1.1",
+	"version": "1.3",
 	"manifest_version": 2,
 	"description": "Easily watch TV.",
 	"icons": {"48": "tv_48.png", "128": "tv_128.png"},
@@ -36,8 +36,33 @@
 			"js": ["jquery-1.7.2.min.js", "filmon.js"]
 		},
 		{
+			"matches": [
+				"http://www.popped.biz/*"],
+			"js": ["jquery-1.7.2.min.js", "close.js"]
+		},
+		{
 			"matches": ["http://kickass.so/*"],
 			"js": ["jquery-1.7.2.min.js", "kat.js"]
+		},
+		{
+			"matches": ["http://www.filehoot.com/*"],
+			"js": ["jquery-1.7.2.min.js", "filehoot.js"]
+		},
+		{
+			"matches": ["http://www.terraclicks.com/*", 
+						"http://cdn.freefarcy.com/*", 
+						"http://www.fromdoctopdf.com/*",
+						"http://www.ceceallure.com/*",
+						"http://onclickads.net/*"],
+			"js": ["jquery-1.7.2.min.js", "close.js"]
+		},
+		{
+			"matches": ["http://vidto.me/*"],
+			"js": ["jquery-1.7.2.min.js", "vidtome.js"]
+		},
+		{
+			"matches": ["http://www.cc.com/*"],
+			"js": ["jquery-1.7.2.min.js", "cc.js"]
 		}
 	],
 	"content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
